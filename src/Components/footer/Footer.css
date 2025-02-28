@@ -138,4 +138,10 @@ footer a {
     .social-icons {
         justify-content: center;
     }
+
+
+    .footer-logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
