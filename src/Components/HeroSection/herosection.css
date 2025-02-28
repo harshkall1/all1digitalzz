@@ -47,7 +47,7 @@
 }
 
 .aboutus {
-    height: 180px;
+    height: 240px;
     position: relative;
 }
 
@@ -92,7 +92,10 @@
         width: 90%;
         top: -130px;
     }
-
+    .aboutus {
+        height: 360px;
+        position: relative;
+    }
     
 }
 
@@ -125,7 +128,18 @@
         top: -280px;
 
     }
+    .aboutus {
+        height: 240px;
+        position: relative;
+    }
 
+}
+
+@media screen and (max-width: 660px) {
+    .aboutus {
+        height: 320px;
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -159,7 +173,7 @@
     }
 
     .aboutus{
-        height: 250px;
+        height: 350px;
     }
 
    
@@ -185,7 +199,7 @@
     }
 
     .aboutus{
-        height: 290px;
+        height: 450px;
     }
 
 

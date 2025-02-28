@@ -36,7 +36,7 @@ const Services = () => {
 
                             <div className="card-content">
                                 <h3>Software Development</h3>
-                                <p>Lorem Ipsum dolor sit ame, consectetur adipiscing elit. proin scelerisque blandit sem.Vivamus facilisis neque</p>
+                                <p>We create custom web, mobile, and enterprise solutions for seamless digital experiences.</p>
                             </div>
                         </div>
 
@@ -47,7 +47,7 @@ const Services = () => {
 
                             <div className="card-content">
                                 <h3>Social Media marketing</h3>
-                                <p>Lorem Ipsum dolor sit ame, consectetur adipiscing elit. proin scelerisque blandit sem.Vivamus facilisis neque</p>
+                                <p>We grow your brand with engaging content, targeted ads, and data-driven strategies.</p>
                             </div>
                         </div>
 
@@ -58,7 +58,7 @@ const Services = () => {
 
                             <div className="card-content">
                                 <h3>Web Hosting</h3>
-                                <p>Lorem Ipsum dolor sit ame, consectetur adipiscing elit. proin scelerisque blandit sem.Vivamus facilisis neque</p>
+                                <p>We offer secure, high-speed hosting with reliable uptime and support.</p>
                             </div>
                         </div>
 
@@ -70,7 +70,7 @@ const Services = () => {
 
                             <div className="card-content">
                                 <h3>SEO</h3>
-                                <p>Lorem Ipsum dolor sit ame, consectetur adipiscing elit. proin scelerisque blandit sem.Vivamus facilisis neque</p>
+                                <p>We optimize your website to rank higher, drive traffic, and boost visibility.</p>
                             </div>
                         </div>
 

@@ -8,24 +8,32 @@ import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
     {
-        name: "Emily Carter",
-        image: "https://randomuser.me/api/portraits/women/44.jpg",
-        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit porta massa, ut lacinia.",
-        rating: 4,
+        "name": "Emily Carter",
+        "review": "The team provided an outstanding SEO strategy that significantly boosted our website traffic. Highly recommended!",
+        "rating": 5
     },
     {
-        name: "John Doe",
-        image: "https://randomuser.me/api/portraits/men/46.jpg",
-        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit porta massa, ut lacinia.",
-        rating: 5,
+        "name": "John Doe",
+        "review": "Excellent software development services! They delivered a seamless and high-performing web application ahead of schedule.",
+        "rating": 5
     },
     {
-        name: "Emily Carter",
-        image: "https://randomuser.me/api/portraits/women/45.jpg",
-        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit porta massa, ut lacinia.",
-        rating: 4,
+        "name": "Sophia Williams",
+        "review": "Their social media marketing strategies helped us gain a larger audience and improve engagement. Great results!",
+        "rating": 4
     },
-];
+    {
+        "name": "Michael Brown",
+        "review": "Reliable web hosting with top-notch support. Our site has been running smoothly with zero downtime.",
+        "rating": 5
+    },
+    {
+        "name": "Emma Johnson",
+        "review": "Professional and efficient team! Their SEO and marketing efforts helped our business grow significantly.",
+        "rating": 5
+    }
+]
+;
 
 const Testimonials = () => {
 

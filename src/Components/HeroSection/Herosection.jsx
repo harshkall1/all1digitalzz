@@ -60,7 +60,9 @@ const Herosection = () => {
                             <h2>Who we are?</h2>
 
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque blandit sem. Vivamus facilisis neque ut vulputate venenatis. Cras et quam lectus. Phasellus lacus urna, dignissim nec lorem nec,  interdum posuere neque. Nullam auctor volutpat sapien, sed rhoncus odio lobortis vel.
+                            We are a results-driven digital marketing agency dedicated to helping businesses grow in the digital landscape. Our team of experts specializes in SEO, social media marketing, content creation, PPC advertising, and data-driven strategies to enhance brand visibility and engagement. With a passion for innovation and a commitment to delivering measurable results, we create customized marketing solutions that drive traffic, generate leads, and maximize ROI.
+
+Let us elevate your brand and turn your digital presence into a powerful business asset.
                             </p>
 
                             <div className="about-ctas">
