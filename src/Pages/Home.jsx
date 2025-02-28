@@ -6,6 +6,8 @@ import Services from '../Components/OurServices/Services'
 import Chooseus from '../Components/ChooseUs/Chooseus'
 import Milestones from '../Components/ChooseUs/Milestones'
 import Testimonials from '../Components/testimonials/Testimonials'
+import Newsletter from '../Components/Newsletter/Newsletter'
+import Contactus from '../Components/Contactus/Contactus'
 
 const Home = () => {
 
@@ -17,9 +19,12 @@ const Home = () => {
         <>
             <Herosection />
             <Services />
-            <Chooseus/>
-            <Milestones/>
-            <Testimonials/>
+            <Chooseus />
+            <Milestones />
+            <Testimonials />
+            <Contactus/>
+            <Newsletter />
+
         </>
 
     )
