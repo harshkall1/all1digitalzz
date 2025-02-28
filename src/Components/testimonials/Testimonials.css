@@ -1,0 +1,133 @@
+.testimonials-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: #008080;
+    border-bottom: 3px solid #008080;
+    padding-bottom: 5px;
+}
+
+.testimonials-container {
+    width: 80%;
+    max-width: 1240px;
+    margin: auto;
+    padding: 20px;
+}
+
+.testimonial-box {
+    background: #EFEFEF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    max-width: 600px;
+    margin: auto;
+    height: 240px; 
+}
+
+.testimonial-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+.client-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    position: absolute;
+    outline: 6px solid #fff;
+    top: -40px;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rating {
+    color: #3EB2BD;
+    font-size: 20px;
+    display: flex;
+    gap: 6px;
+}
+
+.client-review {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.slick-dots {
+    bottom: -30px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 12px !important;
+    color: #008080 !important;
+    opacity: 0.5 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: #008080 !important;
+}
+
+.slick-slide > div
+{
+    margin: 0 10px;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .testimonial-box {
+        width: 100%;
+    }
+
+    .client-img {
+        width: 80px;
+        height: 80px;
+        top: -35px;
+    }
+
+    .client-name {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}

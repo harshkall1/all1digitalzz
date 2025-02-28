@@ -1,0 +1,193 @@
+.herosection {
+    min-height: 600px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    background-image: url('../../assets/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* top: -152px; */
+    overflow: hidden;
+}
+
+
+.hero-overlay {
+    min-height: 610px;
+    background: rgba(0, 0, 0, 0.785);
+    backdrop-filter: blur(5px);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.865983893557423) 14%, rgba(255, 255, 255, 1) 100%); */
+    padding-top: 150px;
+}
+
+.heroContent {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+}
+
+.hero-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContent h1 {
+    font-size: 64px;
+    color: #fff;
+}
+
+.heroContent p {
+    font-size: 30px;
+    max-width: 870px;
+    line-height: 38px;
+    color: #fff;
+
+}
+
+.aboutus {
+    height: 180px;
+    position: relative;
+}
+
+.aboutus .container {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutus-bx {
+    max-width: 1040px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 50px;
+    min-height: 330px;
+    position: absolute;
+    top: -200px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.aboutus-bx p {
+    text-align: center;
+    color: #7B7B7B;
+}
+
+
+.about-ctas {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-ctas button {
+    padding: 10px 20px;
+    border: 2px solid #3EB2BD;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1060px) {
+    .aboutus-bx {
+        width: 90%;
+        top: -130px;
+    }
+
+    
+}
+
+@media screen and (max-width: 990px) {
+
+    .aboutus-bx {
+        top: -120px;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .hero-overlay {
+        padding-top: 100px;
+    }
+
+    .heroContent h1 {
+        font-size: 42px;
+    }
+
+    .heroContent p {
+        font-size: 24px;
+        line-height: 30px;
+
+    }
+
+    .aboutus-bx {
+        top: -280px;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-bx {
+        padding: 50px 25px;
+    }
+
+    .hero-overlay {
+        padding-top: 90px;
+    }
+
+
+    .heroContent h1 {
+        font-size: 35px;
+        line-height: 40PX;
+    }
+
+    .heroContent p {
+        font-size: 20px;
+        line-height: 25px;
+
+    }
+
+    .aboutus-bx p {
+        font-size: 14px;
+    }
+
+    .about-ctas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aboutus{
+        height: 250px;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .hero-overlay {
+        padding-top: 60px;
+    }
+
+
+    .heroContent p {
+        font-size: 20px;
+        line-height: 35px;
+
+    }
+
+    .aboutus-bx {
+        top: -260px;
+
+    }
+
+    .aboutus{
+        height: 290px;
+    }
+
+
+
+}

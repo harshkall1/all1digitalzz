@@ -1,0 +1,123 @@
+.services-section {
+    background-color: #EFEFEF;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.services-header h2 {
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+.view-all-btn {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.icon svg {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: calc((100% - 60px) / 4);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.01); 
+}
+
+.service-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.service-icon svg {
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 50px;
+    padding: 6px;
+    border-radius: 12px;
+
+}
+
+.service-icon::after {
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    background-color: #3eb2bd99;
+    z-index: -2;
+    filter: blur(25px);
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 20px;
+}
+.card-content p {
+    color: #7B7B7B;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-card{
+        width: calc((100% - 20px) / 2);
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .service-card{
+        width: 100%;
+    }
+
+    .services-header{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .services-header h2{
+        justify-content: center;
+    }
+
+    .view-all-btn{
+        font-size: 14px
+    }
+}

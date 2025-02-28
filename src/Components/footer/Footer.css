@@ -1,0 +1,141 @@
+footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+}
+
+
+footer p, 
+footer a {
+    color: #7B7B7B;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+
+/* Change .container to .footer-container */
+.footer-container {
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* No interference with navbar */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Navbar-specific container */
+.navbar .container {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+
+/* Footer Grid */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Footer Column */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #7B7B7B;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #3EB2BD;
+    cursor: pointer;
+
+}
+
+.footer-logo {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    background: #3EB2BD;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons a:hover {
+    background: #2e8b92;
+}
+
+/* Full-Width Map */
+.footer-map {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .map {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
