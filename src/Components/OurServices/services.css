@@ -51,7 +51,7 @@
 
 .service-card:hover {
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    transform: scale(1.01); 
+    transform: scale(1.01);
 }
 
 .service-icon {
@@ -61,15 +61,16 @@
     position: relative;
     z-index: 2;
     margin-top: 20px;
+    padding: 10px;
 }
 
 .service-icon svg {
     background-color: rgb(255, 255, 255);
     height: 45px;
     width: 50px;
-    padding: 6px;
+    padding: 10px;
     border-radius: 12px;
-
+    color: #0000009f;
 }
 
 .service-icon::after {
@@ -80,6 +81,7 @@
     background-color: #3eb2bd99;
     z-index: -2;
     filter: blur(25px);
+    opacity: 0.6;
 }
 
 .card-content {
@@ -89,13 +91,14 @@
 .card-content h3 {
     font-size: 20px;
 }
+
 .card-content p {
     color: #7B7B7B;
     font-size: 16px;
 }
 
 @media screen and (max-width: 1024px) {
-    .service-card{
+    .service-card {
         width: calc((100% - 20px) / 2);
     }
 
@@ -103,21 +106,111 @@
 
 
 @media screen and (max-width: 500px) {
-    .service-card{
+    .service-card {
         width: 100%;
     }
 
-    .services-header{
+    .services-header {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        
+
     }
-    .services-header h2{
+
+    .services-header h2 {
         justify-content: center;
     }
 
-    .view-all-btn{
+    .view-all-btn {
         font-size: 14px
+    }
+}
+
+
+.modal-area {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000b6;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-bx {
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 12px;
+    width: calc(100% - 40px);
+    max-width: 660px;
+    position: relative;
+    overflow: scroll;
+    animation: scaleModal 0.2s ease-out forwards;
+}
+
+.modal-bx::-webkit-scrollbar {
+    display: none; 
+}
+
+@keyframes scaleModal {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.service-points {
+    margin-top: 15px;
+    text-align: left;
+    padding: 0;
+}
+
+.service-points li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.service-points li::before {
+    content: "✔";
+    color: #3EB2BD;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 500px) {
+    .modal-bx {
+        width: 95%;
+        padding: 1.5rem;
     }
 }

@@ -33,10 +33,10 @@ const Header = () => {
 
 
 
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">contact us</a>
+                        <a href="#" onClickCapture={() => setShowNav(!showNav)}>Home</a>
+                        <a href="#about" onClickCapture={() => setShowNav(!showNav)}>About</a>
+                        <a href="#services" onClickCapture={() => setShowNav(!showNav)}>Services</a>
+                        <a href="#contact-us" onClickCapture={() => setShowNav(!showNav)}>contact us</a>
                     </nav>
                 </div>
             </header>

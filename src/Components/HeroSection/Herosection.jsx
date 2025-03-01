@@ -26,33 +26,33 @@ const Herosection = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000, 
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,         pauseOnHover: false, 
+        autoplaySpeed: 2000, pauseOnHover: false,
     };
 
     return (
         <>
-           <div className="herosection">
-            <div className="hero-overlay">
-                <Slider {...settings}>
-                    {slides.map((slide, index) => (
-                        <div key={index}>
-                            <div data-aos="fade-up" data-aos-duration="1000" className="heroContent container">
-                                <div className="hero-flex">
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.description}</p>
+            <div className="herosection">
+                <div className="hero-overlay">
+                    <Slider {...settings}>
+                        {slides.map((slide, index) => (
+                            <div key={index}>
+                                <div data-aos="fade-up" data-aos-duration="1000" className="heroContent container">
+                                    <div className="hero-flex">
+                                        <h1>{slide.title}</h1>
+                                        <p>{slide.description}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
-        </div>
 
-            <div className="aboutus">
+            <div id='about' className="aboutus">
                 <div className="container">
                     <div className="aboutus-bx" data-aos="fade-up" data-aos-duration="1000" >
                         <div>
@@ -60,13 +60,16 @@ const Herosection = () => {
                             <h2>Who we are?</h2>
 
                             <p>
-                            We are a results-driven digital marketing agency dedicated to helping businesses grow in the digital landscape. Our team of experts specializes in SEO, social media marketing, content creation, PPC advertising, and data-driven strategies to enhance brand visibility and engagement. With a passion for innovation and a commitment to delivering measurable results, we create customized marketing solutions that drive traffic, generate leads, and maximize ROI.
+                                We are a results-driven digital marketing agency dedicated to helping businesses grow in the digital landscape. Our team of experts specializes in SEO, social media marketing, content creation, PPC advertising, and data-driven strategies to enhance brand visibility and engagement. With a passion for innovation and a commitment to delivering measurable results, we create customized marketing solutions that drive traffic, generate leads, and maximize ROI.
 
-Let us elevate your brand and turn your digital presence into a powerful business asset.
+                                Let us elevate your brand and turn your digital presence into a powerful business asset.
                             </p>
 
                             <div className="about-ctas">
-                                <button className='btn primary-button'>Contact Now</button>
+                                <a href="#contact-us">
+
+                                    <button className='btn primary-button'>Contact Now</button>
+                                </a>
                                 <button className='btn secondary-button'>Read More</button>
                             </div>
                         </div>

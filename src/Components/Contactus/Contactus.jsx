@@ -41,7 +41,7 @@ const Contactus = () => {
     };
 
     return (
-        <section className="contact-section">
+        <section id="contact-us" className="contact-section">
             <div className="container contact-wrapper">
                 <div className="contact-form-container">
                     <form  ref={formRef} className="contact-form" onSubmit={sendEmail}>

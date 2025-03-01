@@ -12,6 +12,10 @@ body{
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
   width: 1280px;
   max-width: 100%;
@@ -108,3 +112,4 @@ a{
     font-size: 28px;
   }
 }
+

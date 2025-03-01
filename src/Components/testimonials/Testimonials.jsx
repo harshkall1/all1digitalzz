@@ -5,6 +5,7 @@ import { FaRegStar, FaStar } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 
 const testimonials = [
     {
@@ -33,7 +34,27 @@ const testimonials = [
         "rating": 5
     }
 ]
-;
+
+
+
+
+const CustomPrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div className="custom-arrow prev-arrow" onClick={onClick}>
+            <IoIosArrowDropleftCircle size={40} />
+        </div>
+    );
+};
+
+const CustomNextArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div className="custom-arrow next-arrow" onClick={onClick}>
+            <IoIosArrowDroprightCircle size={40} />
+        </div>
+    );
+};
 
 const Testimonials = () => {
 
@@ -44,6 +65,8 @@ const Testimonials = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        prevArrow: <CustomPrevArrow />,
+        nextArrow: <CustomNextArrow />,
         responsive: [
             {
                 breakpoint: 894,
@@ -57,7 +80,9 @@ const Testimonials = () => {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    prevArrow: null,  
+                    nextArrow: null,  
                 }
             }
 

@@ -131,3 +131,42 @@
         font-size: 24px;
     }
 }
+/* 
+.arrow-testimonial{
+    color: #3EB2BD;
+} */
+
+
+
+.testimonials-container {
+    position: relative;
+}
+
+.custom-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev-arrow {
+    left: -10px;
+}
+
+.next-arrow {
+    right: -10px;
+}
+
+.custom-arrow svg {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.custom-arrow:hover svg {
+    color: #3EB2BD;
+
+}
