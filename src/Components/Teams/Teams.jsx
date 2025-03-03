@@ -14,7 +14,7 @@ const teamMembers = [
 
     {
         name: "Ananya",
-        role: "HR Lead",
+        role: "HR",
         image: femaleAvatar,
         social: {
             facebook: "#",

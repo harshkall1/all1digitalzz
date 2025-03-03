@@ -1,0 +1,41 @@
+.faq-section {
+    padding: 50px 0;
+  }
+  
+  .faq-list {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    background: #efefef;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s;
+  }
+  
+  .faq-item.open {
+    background: #d9d9d9;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3EB2BD;
+  }
+  

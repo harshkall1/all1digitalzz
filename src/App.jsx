@@ -13,6 +13,7 @@ import Error from './Pages/Error'
 import Contactus from './Components/Contactus/Contactus'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
+import FAQ from './Pages/FAQ'
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/faqs' element={<FAQ />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/*' element={<Error />} />
         </Routes>
