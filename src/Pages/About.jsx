@@ -3,11 +3,13 @@ import Customherosection from '../Components/Custom-herosection/Customherosectio
 import aboutimg from '../assets/aboutus.png'
 import project from '../assets/project.png'
 import feature from '../assets/features.png'
+import { Link } from 'react-router-dom'
+import Team from '../Components/Teams/Teams'
 const About = () => {
 
-        useEffect(() => {
-            window.scrollTo(0, 0);
-        }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -21,6 +23,8 @@ const About = () => {
                     </div>
                     <div className="c-bx">
                         <div className="aboutus-page-conetent">
+                        <h4>About us</h4>
+
                             <h2>
                                 Who we are ?
                             </h2>
@@ -63,14 +67,14 @@ const About = () => {
                     <div className="c-bx">
                         <div className="aboutus-page-conetent">
                             <h4>Features</h4>
-                            <h2>We Have Also Some Features That Provided by kkpwesoft</h2>
+                            <h2>We Have Also Some Features That Provided by ALL1 DIgitalz</h2>
                             <p>
-                                We have also some features that provided by kkpwesoft like web designing,
+                                We have also some features that provided by ALL1 DIgitalz like web designing,
                                 development, and many more. We have a team of highly skilled and experienced
                                 professionals who are always ready to assist you in every step of the web
                                 development process. We also offer a wide range of services like e-commerce
                                 development, security, and maintenance. So, if you are looking for a reliable
-                                and affordable web development company, then kkpwesoft is the right choice for you.
+                                and affordable web development company, then ALL1 DIgitalz is the right choice for you.
                             </p>
                             <ul>
                                 <li>🚀 Freelancing Training Course</li>
@@ -79,13 +83,17 @@ const About = () => {
                                 <li>🎓 IT Learning Institute</li>
                                 <li>📈 Digital Marketing</li>
                             </ul>
-                            <button className="btn primary-button">Contact now</button>
+                            <Link to={'/contact'}>
+                                <button className="btn primary-button">Contact now</button>
+                            </Link>
                         </div>
                     </div>
 
                 </div>
             </section>
 
+
+            <Team/>
 
         </>
     )

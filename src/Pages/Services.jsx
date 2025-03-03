@@ -107,7 +107,7 @@ const Services = () => {
         <>
             <Customherosection title="Our Services" />
 
-            <section>
+            <section className='colored-bg'>
                 <div className="container">
 
                     <ServiceCardGrid services={servicesData} />
