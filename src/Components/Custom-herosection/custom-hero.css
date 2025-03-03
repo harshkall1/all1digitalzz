@@ -1,0 +1,35 @@
+.custom-hero{
+    background-image: url('../../assets/herobg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.custom-hero-overlay{
+    background-color: rgba(0, 0, 0, 0.593);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-hero-overlay h1 {
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-hero-overlay h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .custom-hero-overlay h1 {
+        font-size: 35px;
+        line-height: 40PX;
+    }
+}

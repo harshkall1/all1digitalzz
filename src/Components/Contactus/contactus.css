@@ -1,5 +1,4 @@
 .contact-section {
-    background: #f5fafd; /* Light variant of your theme */
     color: #333;
   }
   
@@ -63,12 +62,11 @@
     background-color: #3EB2BD;
     color: white;
     border: none;
-    padding: 14px;
+    padding: 10px 14px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
     font-weight: bold;
-    text-transform: uppercase;
     transition: 0.3s ease-in-out;
   }
   

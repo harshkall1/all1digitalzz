@@ -1,22 +1,48 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './Components/Header/Header'
 import Home from './Pages/Home'
 import Footer from './Components/footer/Footer'
 import Topbar from './Components/topbar/Topbar'
-import Newsletter from './Components/Newsletter/Newsletter'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Services from './Pages/Services'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import Error from './Pages/Error'
+import Contactus from './Components/Contactus/Contactus'
+import Contact from './Pages/Contact'
+import About from './Pages/About'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+
+  useEffect(() => {
+    Aos.init();
+  })
 
   return (
     <>
 
-      <Topbar />
-      <Header />
 
-      <Home />
+      <BrowserRouter>
+        <Topbar />
+        <Header />
 
-      <Footer />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/*' element={<Error />} />
+        </Routes>
+        <Footer />
+
+      </BrowserRouter>
+
+
+
+
     </>
   )
 }

@@ -5,6 +5,9 @@ import logo from '../../assets/logo.png'
 import { IoClose } from "react-icons/io5";
 
 import { CgMenuRight } from "react-icons/cg";
+import { Link, NavLink } from 'react-router-dom';
+
+
 const Header = () => {
 
     const [showNav, setShowNav] = useState(false)
@@ -14,10 +17,9 @@ const Header = () => {
             <header>
                 <div className="innerHeader container">
                     <div className="logoarea">
-                        <span className="logo">
-                        </span>
-
-                        <img src={logo} height={70} alt="" />
+                        <Link to="/">
+                            <img src={logo} height={70} alt="" />
+                        </Link>
                     </div>
 
                     <div className="menuIcon" onClickCapture={() => setShowNav(!showNav)}>
@@ -33,10 +35,10 @@ const Header = () => {
 
 
 
-                        <a href="#" onClickCapture={() => setShowNav(!showNav)}>Home</a>
-                        <a href="#about" onClickCapture={() => setShowNav(!showNav)}>About</a>
-                        <a href="#services" onClickCapture={() => setShowNav(!showNav)}>Services</a>
-                        <a href="#contact-us" onClickCapture={() => setShowNav(!showNav)}>contact us</a>
+                        <NavLink to="/" onClickCapture={() => setShowNav(!showNav)}>Home</NavLink>
+                        <NavLink to="/about" onClickCapture={() => setShowNav(!showNav)}>About</NavLink>
+                        <NavLink to="/services" onClickCapture={() => setShowNav(!showNav)}>Services</NavLink>
+                        <NavLink to="/contact" onClickCapture={() => setShowNav(!showNav)}>contact us</NavLink>
                     </nav>
                 </div>
             </header>

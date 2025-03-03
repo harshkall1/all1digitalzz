@@ -5,6 +5,7 @@ import './herosection.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 
 const slides = [
@@ -52,10 +53,17 @@ const Herosection = () => {
                 </div>
             </div>
 
-            <div id='about' className="aboutus">
+
+
+
+
+            <div className="aboutus">
                 <div className="container">
-                    <div className="aboutus-bx" data-aos="fade-up" data-aos-duration="1000" >
-                        <div>
+                    <div id='about' className="aboutus-bx" data-aos="fade-up" data-aos-duration="1000" >
+                        <div >
+
+
+
 
                             <h2>Who we are?</h2>
 
@@ -65,12 +73,14 @@ const Herosection = () => {
                                 Let us elevate your brand and turn your digital presence into a powerful business asset.
                             </p>
 
-                            <div className="about-ctas">
-                                <a href="#contact-us">
+                            <div className="about-ctas about-bx-links">
+                                <Link to="/contact">
 
                                     <button className='btn primary-button'>Contact Now</button>
-                                </a>
-                                <button className='btn secondary-button'>Read More</button>
+                                </Link>
+                                <Link to={'/about'}>
+                                    <button className='btn secondary-button'>Read More</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
