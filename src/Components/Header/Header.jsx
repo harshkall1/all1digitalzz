@@ -39,6 +39,7 @@ const Header = () => {
                         <NavLink to="/about" onClickCapture={() => setShowNav(!showNav)}>About</NavLink>
                         <NavLink to="/services" onClickCapture={() => setShowNav(!showNav)}>Services</NavLink>
                         <NavLink to="/faqs" onClickCapture={() => setShowNav(!showNav)}>FAQs</NavLink>
+                        <NavLink to="/Careers" onClickCapture={() => setShowNav(!showNav)}>Careers</NavLink>
                         <NavLink to="/contact" onClickCapture={() => setShowNav(!showNav)}>contact us</NavLink>
                     </nav>
                 </div>
